@@ -1,0 +1,11 @@
+PROCEDURE sort_insertion(element,sizetab : interger; tab : ARRAY_OF INTEGER;)
+VAR
+    int i;
+    i := sizetab;
+BEGIN
+    WHILE (i>0 && tab[i-1] > element) DO
+        tab[i] := tab [i-1];
+        i--;
+    END_WHILE
+    tab[i] := element;
+END
